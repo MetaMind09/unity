@@ -21,7 +21,8 @@ using UnityEngine.Audio;
         /// </summary>
 
      // public AudioClip audioClip;
-        public Variable variable = audioClip.objectValue as AudioClip;
+        public Variable variable;
+        variable.objectValue = AudioClip;
 
         /// <summary>
         /// The mixer to send the audio clip to when played.
