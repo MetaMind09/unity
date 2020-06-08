@@ -10,6 +10,9 @@ namespace AudioHelm
         
         public List<Note> bunchofnotes = new List<Note>(AudioHelm.Sequencer.GetAllNoteOnsInRange(0, 500));
 
-
-  }
+        void Start()
+        {
+        bunchofnotes.FindAll().ToString().Log();
+        }
+}
 }
